@@ -37,18 +37,18 @@ const DailyGoalsInput: React.FC = () => {
         placeholder="Write a goal"
       />
       <button onClick={addGoal}>Add Goal</button>
-      <ul>
-        {goals.map((goal, index) => (
-          <li key={index}>
+      <ul className='no-bullets'>
+    {goals.map((goal, index) => (
+        <li key={index}>
             <input
-              type="checkbox"
-              checked={goal.completed}
-              onChange={() => toggleGoalCompletion(index)}
+                type="checkbox"
+                checked={goal.completed}
+                onChange={() => toggleGoalCompletion(index)}
             />
             <span className={goal.completed ? 'completed' : ''}>{goal.text}</span>
-          </li>
-        ))}
-      </ul>
+        </li>
+    ))}
+</ul>
     </div>
   );
 };

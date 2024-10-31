@@ -20,7 +20,7 @@ const MotivateQuotes: React.FC<MotivateQuotesProps> = ({ mood }) => {
   }
 
   return (
-    <div>
+    <div className="motivate-quotes-container">
       <h2>Motivational Quote</h2>
       <p>{quote}</p>
     </div>
