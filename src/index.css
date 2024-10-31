@@ -41,7 +41,6 @@ nav ul li a:hover {
     color: #ffb6c1; 
 }
 
-/* Container for the mood selection */
 .mood-input {
     text-align: center;
     margin-top: 20px;
@@ -54,7 +53,7 @@ nav ul li a:hover {
     color: #333;
     text-align: center;
     margin-bottom: 15px;
-    line-height: 1.2; /* Improves readability */
+    line-height: 1.2; 
 }
 .mood-input h2 {
     font-size: 1.5em;
@@ -62,7 +61,6 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-/* Container for the buttons */
 .mood-buttons {
     display: flex;
     justify-content: center;
@@ -71,7 +69,6 @@ nav ul li a:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Styles for the buttons */
 .mood-buttons button {
     padding: 10px 20px;
     font-size: 1em;
@@ -82,20 +79,84 @@ nav ul li a:hover {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Colors for each mood */
-.mood-buttons button:nth-child(1) { background-color: #ffb6c1; } /* Very Happy */
-.mood-buttons button:nth-child(2) { background-color: #ffd700; } /* Happy */
-.mood-buttons button:nth-child(3) { background-color: #d3d3d3; } /* Neutral */
-.mood-buttons button:nth-child(4) { background-color: #87ceeb; } /* Sad */
-.mood-buttons button:nth-child(5) { background-color: #ff3632; } /* Very Sad */
+.mood-buttons button:nth-child(1) { background-color: #ffb6c1; } 
+.mood-buttons button:nth-child(2) { background-color: #ffd700; } 
+.mood-buttons button:nth-child(3) { background-color: #d3d3d3; } 
+.mood-buttons button:nth-child(4) { background-color: #87ceeb; } 
+.mood-buttons button:nth-child(5) { background-color: #ff3632; } 
 
-/* Hover and active states */
 .mood-buttons button:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05); 
     opacity: 0.9;
 }
 
 .mood-buttons button:active {
-    transform: scale(1); /* Return to normal on click */
+    transform: scale(1); 
     opacity: 0.8;
+}
+
+.daily-goals-container {
+    text-align: center; 
+    margin: 20px auto;
+    max-width: 600px; 
+}
+
+.daily-goals {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8em; 
+    font-weight: bold; 
+    color: #333; 
+    margin-bottom: 15px; 
+}
+
+.daily-goals input[type="text"] {
+    padding: 10px;
+    font-size: 1em; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    width: 80%; 
+}
+
+.daily-goals button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #F88379; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.daily-goals button:hover {
+    background-color: #ffb6c1; 
+}
+
+.daily-goals ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.daily-goals li {
+    display: flex; 
+    align-items: center; 
+    padding: 10px; 
+    border-bottom: 1px solid #ccc; 
+    justify-content: space-between; 
+}
+
+.daily-goals li input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+.daily-goals li span {
+    flex-grow: 1; 
+    text-decoration: none; 
+}
+
+.daily-goals li span.completed {
+    text-decoration: line-through; 
+    color: gray; 
 }

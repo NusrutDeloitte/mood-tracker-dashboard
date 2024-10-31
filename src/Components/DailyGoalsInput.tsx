@@ -28,8 +28,8 @@ const DailyGoalsInput: React.FC = () => {
   };
 
   return (
-    <div>
-      <h2>Daily Goals</h2>
+    <div className="daily-goals-container">
+      <h2 className="daily-goals">Daily Goals</h2>
       <input
         type="text"
         value={goalText}
@@ -45,7 +45,7 @@ const DailyGoalsInput: React.FC = () => {
               checked={goal.completed}
               onChange={() => toggleGoalCompletion(index)}
             />
-            <span>{goal.text}</span>
+            <span className={goal.completed ? 'completed' : ''}>{goal.text}</span>
           </li>
         ))}
       </ul>
