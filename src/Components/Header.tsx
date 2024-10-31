@@ -4,7 +4,7 @@
 function Header(){
     return (
         <header>
-        <h1>Mood Tracker Dashboard</h1>
+        <h1 className="header">Mood Tracker Dashboard</h1>
         <nav>
             <ul>
                 <li><a href="/home">Home</a></li>

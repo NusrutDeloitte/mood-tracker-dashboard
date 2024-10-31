@@ -30,9 +30,9 @@ function MoodInput(props: MoodInputProps) {
   };
 
   return (
-    <div>
-      <h2>Select your mood:</h2>
-      <div>
+    <div className="mood-input">
+      <h2 className="mood-heading">Select your mood:</h2>
+      <div className="mood-buttons">
         {moods.map((mood) => (
           <button key={mood} onClick={() => handleMoodClick(mood)}>
             {mood}

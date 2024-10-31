@@ -1,107 +1,101 @@
-/* Center all content on the page */
-/* body, html {
-    height: 100%;
-    margin: 0;
+.header{
+    background-color: #F88379;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-left: auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: background-color 0.3s ease; 
+}
+
+.header:hover {
+    background-color: #ffb6c1; 
+}
+
+
+nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 20px 0; 
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+}
+
+nav ul li {
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+nav ul li a {
+    color: #F88379; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #ffb6c1; 
+}
+
+/* Container for the mood selection */
+.mood-input {
+    text-align: center;
+    margin-top: 20px;
+
+}
+.mood-heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 1.2; /* Improves readability */
+}
+.mood-input h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Container for the buttons */
+.mood-buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-} */
-
-.h1 {
-    padding: 20px 40px;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    transition: background-color 0.5s ease;
+    gap: 15px;
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Background color for each mood */
-.very-happy {
-    background-color: pink;
-}
-
-.happy {
-    background-color: yellow;
-}
-
-.neutral {
-    background-color: lightgray;
-}
-
-.sad {
-    background-color: lightblue;
-}
-
-.very-sad {
-    background-color: lightcoral;
-}
-  
-/* Header styles */
-.header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-
-/* Container styles */
-.container {
-    padding: 20px;
-}
-
-/* Card styles */
-.card {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    padding: 20px;
-}
-
-/* Button styles */
-.button {
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 10px; /* Increased border-radius for more rounded edges */
-    color: white;
-    cursor: pointer;
+/* Styles for the buttons */
+.mood-buttons button {
     padding: 10px 20px;
-    text-align: center;
-    margin: 10px; /* Added margin to space out the buttons */
-    display: block; /* Make the button a block element */
-    margin-left: auto; /* Center the button horizontally */
-    margin-right: auto; /* Center the button horizontally */
-}
-
-.button:hover {
-    background-color: #45a049;
-}
-
-/* Form styles */
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group textarea {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Footer styles */
-.footer {
-    background-color: #4CAF50;
+    font-size: 1em;
     color: white;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Colors for each mood */
+.mood-buttons button:nth-child(1) { background-color: #ffb6c1; } /* Very Happy */
+.mood-buttons button:nth-child(2) { background-color: #ffd700; } /* Happy */
+.mood-buttons button:nth-child(3) { background-color: #d3d3d3; } /* Neutral */
+.mood-buttons button:nth-child(4) { background-color: #87ceeb; } /* Sad */
+.mood-buttons button:nth-child(5) { background-color: #ff3632; } /* Very Sad */
+
+/* Hover and active states */
+.mood-buttons button:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    opacity: 0.9;
+}
+
+.mood-buttons button:active {
+    transform: scale(1); /* Return to normal on click */
+    opacity: 0.8;
 }
