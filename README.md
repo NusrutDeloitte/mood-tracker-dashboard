@@ -13,3 +13,6 @@ MVP 1: 2 moods (happy or sad) Motivational quote (happy quotes)
 MVP 2: Title More emotions Input field where people can write Basic Styles
 MVP 3: Finish daily goals Make it pretty
 MVP 4: More Time: Background color based on mood
+
+Start with npm install
+Run with npm run dev
